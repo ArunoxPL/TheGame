@@ -5,9 +5,9 @@
 int main()
 {
 	Engine Game;
-	Game.createWindow;
+	
 
 
-	std::cin.get();
+	system("PAUSE");
 	return 0;
 }

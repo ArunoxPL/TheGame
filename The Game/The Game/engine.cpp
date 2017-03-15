@@ -3,14 +3,11 @@
 
 
 Engine::Engine()
+	:windowWight(800), windowHeight(600), windowName("THE GAME")
 {
+	sf::Window window;		//Tworzenie okna w konstruktorze
+	window.create(sf::VideoMode(windowWight, windowHeight), windowName, sf::Style::Default);
 }
-
-void Engine::createWindow(int windowWidht, int windowHeight, std::string windowName)
-{
-	sf::Window window(sf::VideoMode(windowWidht, windowHeight), windowName);
-}
-
 
 
 Engine::~Engine()
